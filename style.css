@@ -1,0 +1,154 @@
+/* Base Styles */
+body {
+    background-color: #fafafa;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer {
+    background-color: #525293;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1, header h2 {
+    text-align: center;
+}
+
+nav {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+nav ul {
+    padding: 20px 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Utility Classes */
+.highlight {
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+/* Main Layout */
+main {
+    max-width: 700px;
+    padding: 0 20px; 
+    margin: auto;
+}
+
+/* Sections */
+section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    color: #525293;
+}
+
+.separator-area {
+    background-color: #525293;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 10px;
+    color: #fafafa;
+}
+
+/* Cards */
+.card {
+    display: inline-block;
+    border: 1px solid #525293;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* @media (min-width: 768px) {
+    .card {
+        width: calc(25% - 20px);
+    }
+} */
+
+/* Forms */
+.contact-form {
+    padding: 20px 0;
+}
+
+.contact-form * {
+    display: block;
+    margin: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    font-weight: 400;
+    font-size: smaller;
+}
+
+.contact-form input[type='submit'] {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid #525293;
+    color: #525293;
+    font-size: medium;
+}
+
+.contact-form input[type='submit']:hover {
+    background-color: #525293;
+    border: 2px solid transparent;
+    color: white;
+}
+
+/* Footer */
+footer {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* Media Query */
+@media screen and (max-width: 1000px) {
+    /* body {
+        background-color: burlywood;
+    } */
+    .separator-area {
+        display: none;
+    }
+    .card {
+        width: calc(50% - 22px);
+    }
+}
+
+/* Flex */
+
+.card-container {
+    display: flex;
+    gap: 15px;
+}
